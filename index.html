@@ -1,130 +1,88 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;500;503;700&family=Oswald:wght@200;300;400;600&family=Roboto+Condensed:wght@300&family=Rubik&family=Secular+One&display=swap"
-        rel="stylesheet">
-    <title>One piece</title>
+    <title>Agenda da Reunião Sacramental</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-  <h1>harlem</h1>
-    <main class="personagens">
-        <div class="personagem">
+    <form class="container">
+        <h2>Agenda da Reunião Sacramental 
+            <input type="date" id="dataAtual">
+        </h2>
+    
+        <label for="presidida">✅ Presidida por:</label>
+        <select id="presidida">
+            <option value="">Selecione</option>
+            <option>Luis Gonzaga Souza Damasceno</option>
+            <option>Maciel Bruno da Costa Pereira</option>
+            <option>Mário Sérgio Costa Sousa</option>
+        </select>
 
+        <label for="dirigindo">👉 Dirigindo:</label>
+        <select id="dirigindo">
+            <option value="">Selecione</option>
+            <option>Luis Gonzaga Souza Damasceno</option>
+            <option>Maciel Bruno Da Costa Pereira</option>
+            <option>Mário Sérgio Costa Sousa</option>
+        </select>
 
-        </div>
-        <div class="personagem">
-            <img class="imagem" src="imagens/personagem-tony-chopper.png" alt="">
-        </div>
+        <label for="anuncios">Anúncios:</label>
+        <textarea id="myTextarea" rows="6" placeholder="coloque aqui seu texto..."></textarea>
+        
+        <label for="primeiro_hino">✅ Regente:</label>
+        <select id="chamados_sacerdocio">
+            <option value="">Selecione</option>
+            <option>Julyá Wevelyn de Oliveira</option>
+            <option>Edna Damasceno</option>
+        </select>
 
-        <div class="conteudo">
-            <i class="logo"></i>
-            <h2 class="nome-personagem"> Roronoa zoro</h2>
-            <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe officia consectetur,
-                perspiciatis ipsa sed magnam alias, temporibus velit ea eos aperiam assumenda rerum, et quibusdam ad
-                pariatur mollitia debitis adipisci.</p>
+        <label for="primeiro_hino">✅ Primeiro Hino:</label>
+        <input type="text" id="primeiro_hino">
 
-        </div>
-        <div class="personagem">
-            <img class="imagem" src="imagens/personagem-roronoa-zoro.png" alt="">
-        </div>
+        <label for="primeira_oracao">✅ Primeira Oração:</label>
+        <input type="text" id="primeira_oracao">
 
-        <div class="conteudo">
-            <i class="logo"></i>
-            <h2 class="nome-personagem"> </h2>
-            <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe officia consectetur,
-                perspiciatis ipsa sed magnam alias, temporibus velit ea eos aperiam assumenda rerum, et quibusdam ad
-                pariatur mollitia debitis adipisci.</p>
+        <label for="confirmacao">✅ Confirmação:</label>
+        <input type="text" id="confirmacao">
 
-        </div>
-        <div class="personagem selecionado">
-            <img class="imagem" src="imagens/personagem-monkey-d-luffy.png" alt="">
-        </div>
+        <label for="desobrigacao">✅ Desobrigação:</label>
+        <input type="text" id="desobrigacao">
 
-        <div class="conteudo">
-            <i class="logo"></i>
-            <h2 class="nome-personagem"> monkey de luffy</h2>
-            <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe officia consectetur,
-                perspiciatis ipsa sed magnam alias, temporibus velit ea eos aperiam assumenda rerum, et quibusdam ad
-                pariatur mollitia debitis adipisci.</p>
+        <label for="chamados_sacerdocio">✅ Chamados para Sacerdócio:</label>
+        <select id="chamados_sacerdocio">
+            <option value="">Selecione</option>
+            <option>Sacerdócio Aarônico</option>
+            <option>Sacerdócio Melquisedeque</option>
+        </select>
+        <input type="text" id="nome" placeholder="Nome da Pessoa ">
 
-        </div>
-        <div class="personagem">
-            <img class="imagem" src="imagens/personagem-nami.png" alt="">
-        </div>
+        <label for="hino_sacramental">✅ Hino Sacramental:</label>
+        <input type="text" id="hino_sacramental">
 
-        <div class="conteudo">
-            <i class="logo"></i>
-            <h2 class="nome-personagem"> Nami</h2>
-            <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe officia consectetur,
-                perspiciatis ipsa sed magnam alias, temporibus velit ea eos aperiam assumenda rerum, et quibusdam ad
-                pariatur mollitia debitis adipisci.</p>
+        <label for="primeiro_orador">✅ Primeiro Orador:</label>
+        <input type="text" id="primeiro_orador">
 
-        </div>
-        <div class="personagem">
-            <img class="imagem" src="imagens/personagem-sanji.png" alt="">
-        </div>
+        <label for="segundo_orador">✅ Segundo Orador:</label>
+        <input type="text" id="segundo_orador">
 
-        <div class="conteudo">
-            <i class="logo"></i>
-            <h2 class="nome-personagem">Sanji</h2>
-            <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe officia consectetur,
-                perspiciatis ipsa sed magnam alias, temporibus velit ea eos aperiam assumenda rerum, et quibusdam ad
-                pariatur mollitia debitis adipisci.</p>
+        <label for="terceiro_orador">✅ Terceiro Orador:</label>
+        <input type="text" id="terceiro_orador">
 
-        </div>
-    </main>
-    <ul class="botoes">
-        <li>
+        <label for="ultimo_hino">✅ Último Hino:</label>
+        <input type="text" id="ultimo_hino">
 
-            <button class="botao">
-                <img src="imagens/tripulacao-chopper.png" alt="">
-            </button>
+        <label for="ultima_oracao">✅ Última Oração:</label>
+        <input type="text" id="ultima_oracao">
 
-        </li>
-        <li>
+        <button id="submitButton">Enviar</button>
+    </form>
 
-            <button class="botao">
-                <img src="imagens/tripulacao-zoro.png" alt="">
-            </button>
-
-        </li>
-        <li>
-
-            <button class="botao selecionado">
-                <img src="imagens/tripulacao-luffy.png" alt="">
-            </button>
-
-        </li>
-        <li>
-
-            <button class="botao">
-                <img src="imagens/tripulacao-nami.png" alt="">
-            </button>
-
-        </li>
-        <li>
-
-            <button class="botao">
-                <img src="imagens/tripulacao-sanji.png" alt="">
-            </button>
-
-        </li>
-
-
-
-
-
-
-
-
-    </ul>
+   
+    <script src="script.js">
+        
+       
+    </script>
 </body>
-
 </html>
